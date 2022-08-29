@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,8 +18,11 @@
     <form id="login-form">
         <input type="email" name="email" id="email" placeholder="Email address" /><br>
         <input type="number" id="phone" name="phone" placeholder="phone Number" /><br>
+        <input type="number" class="hidden" id="code-input" placeholder="Enter the code" /><br>
         <button type="submit" id="submit-btn">Register</button>
     </form>
+    <input type="number" class="hidden" id="phone1" name="phone1" placeholder="phone Number" /><br>
+    <button type="button" id="btn" class="hidden">Message me</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
         integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
